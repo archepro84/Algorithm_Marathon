@@ -7,6 +7,8 @@ for i in range(m):
     matrix[a][b] = matrix[b][a] = 1
 visit_list = [0] * (n + 1)
 
+print(matrix)
+
 
 def dfs(v):
     visit_list[v] = 1
