@@ -1,12 +1,17 @@
-# a, b, v = map(int, input().split(' '))
-# a, b, v = 2, 1, 5  # 4
-a, b, v = 5, 1, 6  # 2
-# a, b, v = 100, 99, 1000000000 # 9999999901
-# a, b, v = 5, 3, 23 # 10
-# a, b, v = 4, 2, 11  # 5
-print((v - b - 1) // (a - b) + 1)
-# print(divid)
-print((v - b) / (a - b))
+import math
+
+a, b, v = map(int, input().split(' '))
+
+# a, b, v = [2, 1, 5]
+# a, b, v = 5, 1, 6
+# a, b, v = 100, 99, 1000000000
+
+
+result1 = v - b
+result2 = a - b
+# print(result1, result2)
+# print(result1 / result2)
+print(math.ceil(result1 / result2))
 
 """
 5 2
